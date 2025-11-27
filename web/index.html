@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <title>שליחת טיוטות Outlook</title>
+
+    <form id="mailForm">
+    <label>נמענים (מופרדים ב־;):</label>
+    <input name="to" type="text" placeholder="example@mail.com; another@mail.com" />
+
+    <label>נושא:</label>
+    <input name="subject" type="text" placeholder="נושא ההודעה" />
+
+    <label>גוף ההודעה:</label>
+    <textarea name="body" placeholder="כתוב כאן את תוכן ההודעה"></textarea>
+
+    <label>קובץ מצורף:</label>
+    <input type="file" name="cv" />
+
+    <button type="submit">שלח</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
