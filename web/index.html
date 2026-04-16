@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>שליחת טיוטות Outlook</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <title>שליחת טיוטות Outlook</title>
-
+    <h1>שליחת טיוטות Outlook</h1>
+    
     <form id="mailForm">
-    <label>נמענים (מופרדים ב־;):</label>
-    <input name="to" type="text" placeholder="example@mail.com; another@mail.com" />
+    <label for="addressee" >נמענים (מופרדים ב־;)</label>
+    <input name="to" type="text" id="addressee" placeholder="example@mail.com; another@mail.com" />
 
-    <label>נושא:</label>
-    <input name="subject" type="text" placeholder="נושא ההודעה" />
+    <label for="subject">נושא</label>
+    <input  name="subject" type="text" id="subject" placeholder="נושא ההודעה" />
 
-    <label>גוף ההודעה:</label>
-    <textarea name="body" placeholder="כתוב כאן את תוכן ההודעה"></textarea>
+    <label for="bodyOfMessage">גוף ההודעה</label>
+    <textarea name="body" id="bodyOfMessage" placeholder="כתוב כאן את תוכן ההודעה"></textarea>
 
-    <label>קובץ מצורף:</label>
-    <input type="file" name="cv" />
+    <label for="cv" class="custom-file-upload">קובץ מצורף</label>
+    <input type="file" name="cv" id="cv" />
+
 
     <button type="submit">שלח</button>
 </form>
